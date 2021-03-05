@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #484848;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(54,6,83);
+  background: linear-gradient(120deg, rgba(54,6,83,1) 0%, rgba(255,174,174,1) 100%);
+}
+.content{
+  min-width: 420px;
+  padding: 30px;
+  background: #FFFFFF;
+}
+.title{
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(54, 6, 83, .25);
+}
+.form__label{
+  font-size: .7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+}
+.form__input{
+  margin-top: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid  rgba(54, 6, 83, .3);
+  transition: border ease-in-out .25s;
+}
+.form__input:focus{
+  outline: 0;
+  border: 1px solid  rgba(54, 6, 83, .7);
+}
+.form__text-support{
+  font-weight: 300;
+  text-transform: none;
+  font-size: .55rem;
+  margin-top: 2px;
+  color: rgba(54, 6, 83, .6);
+  font-size: .75rem;
+}
+.form__action{
+  border-radius: 6px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 6px;
+  background: rgba(255,174,174,1);
+  color: #FFFFFF;
+  border: none;
+  transition: background ease-in-out .25s;
+}
+.form__action:disabled{
+  background: rgba(255, 174, 174, .2);
+  color: rgba(255,174,174,1);
+  cursor: not-allowed;
+}
+.form__message{
+  height: 18px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: .9rem;
+  font-weight: 600;
+  color: rgba(54, 6, 83, .8);
+}
