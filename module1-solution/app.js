@@ -1,6 +1,11 @@
 (function () {
+  'use strict'
   const app = angular.module('LunchCheck', [])
-  app.controller('LunchCheckController', function($scope){
+  app.controller('LunchCheckController', LunchCheckControllerFn)
+    
+  LunchCheckControllerFn.$inject = ['$scope']
+
+  function LunchCheckControllerFn($scope){
     $scope.meals = ''
     $scope.message = ''
     
@@ -17,7 +22,7 @@
         $scope.message = 'Hohoho, welcome to the club 🐷'
       }
     }
-  })
+  }
 })()
 
 
